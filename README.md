@@ -1,12 +1,64 @@
-# React + Vite
+"""
+# 🏠 PropShare
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**PropShare** is a full-stack platform that enables small investors to purchase **fractional ownership** in real estate properties with investments starting as low as ₹100. By leveraging blockchain tokenization and UPI payments, PropShare creates a secure, transparent, and accessible marketplace for real estate investments. It aims to democratize access to property ownership and improve liquidity in India’s vast real estate market.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** Vite + React  
+- **Backend:** Node.js + Express  
+- **Database:** MongoDB  
+- **Authentication:** JWT (username + password)  
+- **Payments:** UPI integration  
+- **Blockchain:** Property tokenization  
+- **Machine Learning (Upcoming):** Price forcasting and investment assistance.
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔧 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/propshare.git
+cd propshare
+```
+
+### 2. Start the Backend
+
+```bash
+cd backend
+npm install
+# Add a .env file with MONGO_URI, JWT_SECRET, and PORT
+node server.js
+```
+
+### 3. Start the Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+
+---
+
+## 📌 Roadmap
+
+- [x] User login/register with JWT
+- [ ] Property management APIs
+- [ ] Investment flow with tokenized assets
+- [ ] Blockchain and UPI integration
+- [ ] Predictive ML models for price appreciation
+
+---
+
+## 🧑‍💻 Author
+
+Built with ❤️ by a team passionate about making real estate investments accessible to all.
+
+---
+
+
