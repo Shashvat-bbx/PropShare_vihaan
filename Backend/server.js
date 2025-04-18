@@ -2,22 +2,10 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import userRoutes from './routes/userRoutes.js';
-// import propertyRoutes from './routes/propertyRoutes.js';
+import connectDB from './config.js';
+// import propertyRoutes from './routes/propertyRoutes.js'
 // import investmentRoutes from './routes/investmentRoutes.js';
-import mongoose from 'mongoose';
 
-const connectDB = async () => {
-  try {
-    await mongoose.connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    });
-    console.log('MongoDB Connected');
-  } catch (err) {
-    console.error(err.message);
-    process.exit(1);
-  }
-};
 
 
 dotenv.config();
